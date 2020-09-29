@@ -16,3 +16,6 @@ Route::redirect('/','/home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/history', 'HistoryController@index')->name('history');
+Route::get('/transfer', 'TransferController@index')->name('transfer');
+Route::get('/bills', 'BillsController@index')->name('bills');
