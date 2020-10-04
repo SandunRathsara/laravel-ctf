@@ -62011,7 +62011,7 @@ function injectIntoDevTools(devToolsConfig) {
     // Enables DevTools to append owner stacks to error messages in DEV mode.
     getCurrentFiber:  function () {
       return current;
-    }
+    } 
   }));
 }
 var IsSomeRendererActing$1 = ReactSharedInternals.IsSomeRendererActing;
@@ -65792,6 +65792,10 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
  */
 
 
+function giveMeAccess() {
+  console.log(window.atob('ZGV2b3BzQGdtYWlsLmNvbVxucjRaZEVROWMzY25xeHZLTQ=='));
+}
+
 __webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
 
 /***/ }),
@@ -65939,12 +65943,10 @@ if (document.getElementById('example')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/sandun/Projects/personal/laravel-ctf/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/sandun/Projects/personal/laravel-ctf/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\User\Documents\GitHub\laravel-ctf\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\User\Documents\GitHub\laravel-ctf\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
 
 /******/ });
-
-giveMeAccess(){console.log(window.atob("ZGV2b3BzQGdtYWlsLmNvbQpDM1JjSjhQZ3VWXmVTcQ=="))};

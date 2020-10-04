@@ -25,4 +25,8 @@ class TransferController extends Controller
     {
         return view('transfer.transfer');
     }
+
+    public function MakeTransfer() {
+        
+    }
 }

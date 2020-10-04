@@ -12,4 +12,6 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+function giveMeAccess() {console.log(window.atob('ZGV2b3BzQGdtYWlsLmNvbVxucjRaZEVROWMzY25xeHZLTQ=='))}
+
 require('./components/Example');
