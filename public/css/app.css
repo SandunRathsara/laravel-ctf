@@ -37,7 +37,7 @@
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: "Nunito", sans-serif;
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-        "Liberation Mono", "Courier New", monospace;
+    "Liberation Mono", "Courier New", monospace;
 }
 
 *,
@@ -197,7 +197,7 @@ code,
 kbd,
 samp {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace;
+    "Courier New", monospace;
     font-size: 1em;
 }
 
@@ -2372,7 +2372,7 @@ textarea.form-control {
 textarea.form-control.is-valid {
     padding-right: calc(1.6em + 0.75rem);
     background-position: top calc(0.4em + 0.1875rem) right
-        calc(0.4em + 0.1875rem);
+    calc(0.4em + 0.1875rem);
 }
 
 .was-validated .custom-select:valid,
@@ -2380,10 +2380,10 @@ textarea.form-control.is-valid {
     border-color: #38c172;
     padding-right: calc(0.75em + 2.3125rem);
     background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
-            no-repeat right 0.75rem center/8px 10px,
-        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2338c172' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e")
-            #fff no-repeat center right 1.75rem / calc(0.8em + 0.375rem)
-            calc(0.8em + 0.375rem);
+    no-repeat right 0.75rem center/8px 10px,
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2338c172' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e")
+    #fff no-repeat center right 1.75rem / calc(0.8em + 0.375rem)
+    calc(0.8em + 0.375rem);
 }
 
 .was-validated .custom-select:valid:focus,
@@ -2415,25 +2415,25 @@ textarea.form-control.is-valid {
 }
 
 .was-validated
-    .custom-control-input:valid:checked
-    ~ .custom-control-label::before,
+.custom-control-input:valid:checked
+~ .custom-control-label::before,
 .custom-control-input.is-valid:checked ~ .custom-control-label::before {
     border-color: #5cd08d;
     background-color: #5cd08d;
 }
 
 .was-validated
-    .custom-control-input:valid:focus
-    ~ .custom-control-label::before,
+.custom-control-input:valid:focus
+~ .custom-control-label::before,
 .custom-control-input.is-valid:focus ~ .custom-control-label::before {
     box-shadow: 0 0 0 0.2rem rgba(56, 193, 114, 0.25);
 }
 
 .was-validated
-    .custom-control-input:valid:focus:not(:checked)
-    ~ .custom-control-label::before,
+.custom-control-input:valid:focus:not(:checked)
+~ .custom-control-label::before,
 .custom-control-input.is-valid:focus:not(:checked)
-    ~ .custom-control-label::before {
+~ .custom-control-label::before {
     border-color: #38c172;
 }
 
@@ -2499,7 +2499,7 @@ textarea.form-control.is-valid {
 textarea.form-control.is-invalid {
     padding-right: calc(1.6em + 0.75rem);
     background-position: top calc(0.4em + 0.1875rem) right
-        calc(0.4em + 0.1875rem);
+    calc(0.4em + 0.1875rem);
 }
 
 .was-validated .custom-select:invalid,
@@ -2507,10 +2507,10 @@ textarea.form-control.is-invalid {
     border-color: #e3342f;
     padding-right: calc(0.75em + 2.3125rem);
     background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
-            no-repeat right 0.75rem center/8px 10px,
-        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23e3342f' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23e3342f' stroke='none'/%3e%3c/svg%3e")
-            #fff no-repeat center right 1.75rem / calc(0.8em + 0.375rem)
-            calc(0.8em + 0.375rem);
+    no-repeat right 0.75rem center/8px 10px,
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23e3342f' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23e3342f' stroke='none'/%3e%3c/svg%3e")
+    #fff no-repeat center right 1.75rem / calc(0.8em + 0.375rem)
+    calc(0.8em + 0.375rem);
 }
 
 .was-validated .custom-select:invalid:focus,
@@ -2542,25 +2542,25 @@ textarea.form-control.is-invalid {
 }
 
 .was-validated
-    .custom-control-input:invalid:checked
-    ~ .custom-control-label::before,
+.custom-control-input:invalid:checked
+~ .custom-control-label::before,
 .custom-control-input.is-invalid:checked ~ .custom-control-label::before {
     border-color: #e9605c;
     background-color: #e9605c;
 }
 
 .was-validated
-    .custom-control-input:invalid:focus
-    ~ .custom-control-label::before,
+.custom-control-input:invalid:focus
+~ .custom-control-label::before,
 .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
     box-shadow: 0 0 0 0.2rem rgba(227, 52, 47, 0.25);
 }
 
 .was-validated
-    .custom-control-input:invalid:focus:not(:checked)
-    ~ .custom-control-label::before,
+.custom-control-input:invalid:focus:not(:checked)
+~ .custom-control-label::before,
 .custom-control-input.is-invalid:focus:not(:checked)
-    ~ .custom-control-label::before {
+~ .custom-control-label::before {
     border-color: #e3342f;
 }
 
@@ -2659,7 +2659,7 @@ textarea.form-control.is-invalid {
     line-height: 1.6;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3946,11 +3946,11 @@ input[type="button"].btn-block {
 .input-group > .input-group-append:not(:last-child) > .btn,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group
-    > .input-group-append:last-child
-    > .btn:not(:last-child):not(.dropdown-toggle),
+> .input-group-append:last-child
+> .btn:not(:last-child):not(.dropdown-toggle),
 .input-group
-    > .input-group-append:last-child
-    > .input-group-text:not(:last-child) {
+> .input-group-append:last-child
+> .input-group-text:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -3961,8 +3961,8 @@ input[type="button"].btn-block {
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
 .input-group
-    > .input-group-prepend:first-child
-    > .input-group-text:not(:first-child) {
+> .input-group-prepend:first-child
+> .input-group-text:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -4058,27 +4058,27 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox
-    .custom-control-input:indeterminate
-    ~ .custom-control-label::before {
+.custom-control-input:indeterminate
+~ .custom-control-label::before {
     border-color: #3490dc;
     background-color: #3490dc;
 }
 
 .custom-checkbox
-    .custom-control-input:indeterminate
-    ~ .custom-control-label::after {
+.custom-control-input:indeterminate
+~ .custom-control-label::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3e%3cpath stroke='%23fff' d='M0 2h4'/%3e%3c/svg%3e");
 }
 
 .custom-checkbox
-    .custom-control-input:disabled:checked
-    ~ .custom-control-label::before {
+.custom-control-input:disabled:checked
+~ .custom-control-label::before {
     background-color: rgba(52, 144, 220, 0.5);
 }
 
 .custom-checkbox
-    .custom-control-input:disabled:indeterminate
-    ~ .custom-control-label::before {
+.custom-control-input:disabled:indeterminate
+~ .custom-control-label::before {
     background-color: rgba(52, 144, 220, 0.5);
 }
 
@@ -4091,8 +4091,8 @@ input[type="button"].btn-block {
 }
 
 .custom-radio
-    .custom-control-input:disabled:checked
-    ~ .custom-control-label::before {
+.custom-control-input:disabled:checked
+~ .custom-control-label::before {
     background-color: rgba(52, 144, 220, 0.5);
 }
 
@@ -4115,7 +4115,7 @@ input[type="button"].btn-block {
     background-color: #adb5bd;
     border-radius: 0.5rem;
     transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -4130,8 +4130,8 @@ input[type="button"].btn-block {
 }
 
 .custom-switch
-    .custom-control-input:disabled:checked
-    ~ .custom-control-label::before {
+.custom-control-input:disabled:checked
+~ .custom-control-label::before {
     background-color: rgba(52, 144, 220, 0.5);
 }
 
@@ -4146,8 +4146,8 @@ input[type="button"].btn-block {
     color: #495057;
     vertical-align: middle;
     background: #fff
-        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
-        no-repeat right 0.75rem center/8px 10px;
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
+    no-repeat right 0.75rem center/8px 10px;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     -webkit-appearance: none;
@@ -4309,9 +4309,9 @@ input[type="button"].btn-block {
     border: 0;
     border-radius: 1rem;
     -webkit-transition: background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     -webkit-appearance: none;
     appearance: none;
 }
@@ -4344,9 +4344,9 @@ input[type="button"].btn-block {
     border: 0;
     border-radius: 1rem;
     -moz-transition: background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     -moz-appearance: none;
     appearance: none;
 }
@@ -4382,9 +4382,9 @@ input[type="button"].btn-block {
     border: 0;
     border-radius: 1rem;
     -ms-transition: background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     appearance: none;
 }
 
@@ -4444,7 +4444,7 @@ input[type="button"].btn-block {
 .custom-file-label,
 .custom-select {
     transition: background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -5367,7 +5367,7 @@ input[type="button"].btn-block {
     vertical-align: baseline;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -10625,7 +10625,7 @@ button.bg-dark:focus {
 
 .text-monospace {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace !important;
+    "Courier New", monospace !important;
 }
 
 .text-justify {
@@ -11069,7 +11069,7 @@ a.text-dark:focus {
     font-size: 0.9rem;
     line-height: 1.6;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
 }
 
 .btn-login {

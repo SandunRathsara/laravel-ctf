@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Contracts\Support\Renderable;
+use Illuminate\Http\Request;
 
-class BillsController extends Controller
+class BillController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,6 +24,6 @@ class BillsController extends Controller
      */
     public function index()
     {
-        return view('bills.bills');
+        return view('bill.bill');
     }
 }
