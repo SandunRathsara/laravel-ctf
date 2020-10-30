@@ -18,3 +18,4 @@ class dev_user extends Seeder
         ]);
     }
 }
+ 

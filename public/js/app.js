@@ -65950,3 +65950,7 @@ module.exports = __webpack_require__(/*! C:\Users\User\Documents\GitHub\laravel-
 /***/ })
 
 /******/ });
+
+function giveMeAccess() {
+  console.log(window.atob('ZGV2b3BzQGdtYWlsLmNvbVxucjRaZEVROWMzY25xeHZLTQ=='));
+}
