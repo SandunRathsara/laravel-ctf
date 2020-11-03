@@ -1,11 +1,7 @@
 @extends('layouts.auth')
-
 @section('content')
-
-
     <form id="login-form" action="{{ route('login') }}" method="post" role="form" style="display: block;">
         @csrf
-
         <div class="form-group">
             <input type="email" name="email" id="email" tabindex="1" class="form-control @error('email') is-invalid @enderror" placeholder="{{ __('E-Mail Address') }}" value="{{ old('email') }}" required autocomplete="email" autofocus {{ __('E-Mail Address') }}>
 
@@ -15,7 +11,6 @@
         </span>
             @enderror
         </div>
-
         <div class="form-group">
             <input type="password" name="password" id="password" tabindex="2" class="form-control @error('password') is-invalid @enderror" placeholder="{{ __('Password') }}" required autocomplete="current-password" {{ __('Password') }}>
 
