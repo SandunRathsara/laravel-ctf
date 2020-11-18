@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/','/home');
+Route::redirect('/', '/home');
 
 Auth::routes();
 
@@ -21,6 +21,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/bill-payment', 'HomeController@billpayment')->name('bill-payment');
 Route::get('/transactions', 'HomeController@transactions')->name('transactions');
 Route::get('/AccountBalance', 'HomeController@AccountBalance')->name('AccountBalance');
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::resource('roles','RoleController');
+    Route::resource('users','UserController');
+    Route::resource('accounts','AccountController');
+});
 Route::get('/history', 'HistoryController@index')->name('history');
 Route::get('/transfer', 'TransferController@index')->name('transfer');
 Route::get('/bill', 'BillController@index')->name('bill');
