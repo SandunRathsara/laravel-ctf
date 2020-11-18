@@ -18,6 +18,9 @@ Route::redirect('/','/home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/bill-payment', 'HomeController@billpayment')->name('bill-payment');
+Route::get('/transactions', 'HomeController@transactions')->name('transactions');
+Route::get('/AccountBalance', 'HomeController@AccountBalance')->name('AccountBalance');
 Route::get('/history', 'HistoryController@index')->name('history');
 Route::get('/transfer', 'TransferController@index')->name('transfer');
 Route::get('/bill', 'BillController@index')->name('bill');

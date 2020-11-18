@@ -33,30 +33,36 @@
         <div class="row">
             <!-- Portfolio Item 1-->
             <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                <a href="AccountBalance">
+                    <div class="portfolio-item mx-auto">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ asset('assetshome/img/portfolio/safe.png') }}" alt="" />
                     </div>
-                    <img class="img-fluid" src="{{ asset('assetshome/img/portfolio/safe.png') }}" alt="" />
-                </div>
+                </a>
             </div>
             <!-- Portfolio Item 2-->
             <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                <a href="bill-payment">
+                    <div class="portfolio-item mx-auto">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ asset('assetshome/img/portfolio/cake.png') }}" alt="" />
                     </div>
-                    <img class="img-fluid" src="{{ asset('assetshome/img/portfolio/cake.png') }}" alt="" />
-                </div>
+                </a>
             </div>
             <!-- Portfolio Item 3-->
             <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                <a href="transactions">
+                    <div class="portfolio-item mx-auto">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ asset('assetshome/img/portfolio/submarine.png') }}" alt="" />
                     </div>
-                    <img class="img-fluid" src="{{ asset('assetshome/img/portfolio/submarine.png') }}" alt="" />
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -75,7 +81,7 @@
         <!-- About Section Content-->
         <div class="row">
             <div class="col-lg-4 ml-auto">
-                <p class="lead">Dodge_bax banck provides numoreous services for the customers without charging extra money from the customers. Many citizens in the Sri Lanka use this service since it is very convinient. </p>
+                <p class="lead">Dodge_box banck provides numoreous services for the customers without charging extra money from the customers. Many citizens in the Sri Lanka use this service since it is very convinient. </p>
             </div>
             <div class="col-lg-4 mr-auto">
                 <p class="lead">We provide very secure online trnsactions accross the all bank accounts in the contry. we are very repuatable online bank service providers in Sri Lanka!</p>
@@ -131,295 +137,5 @@
 <div class="scroll-to-top d-lg-none position-fixed">
     <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
 </div>
-<!-- Portfolio Modals-->
-<!-- Portfolio Modal 1-->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-            </button>
-            <div class="modal-body text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">{{ __('Your Balance') }}</h2>
-                            <!-- Icon Divider-->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Image-->
-                            <div class="container d-flex justify-content-center">
-                                <div class="card p-3">
-                                    <h3 class="d-flex flex-row justify-content-between text-align-center"> {{ __('Name') }} </h3>
-                                    <p class="text-dark">{{ __('Elementery Business Account') }}</p>
-                                    <div class="card-bottom pt-3 px-3 mb-2">
-                                        <div class="d-flex flex-row justify-content-between text-align-center">
-                                            <div class="d-flex flex-column"><span>{{ __('Balance amount') }}</span>
-                                                <p>&euro; <span class="text-white">{{ __('88,989') }}</span></p>
-                                            </div> <button class="btn btn-secondary"><i class="fas fa-arrow-right text-white"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-5">This is the balance in your wallet. </p>
-                            <button class="btn btn-primary" data-dismiss="modal">
-                                <i class="fas fa-times fa-fw"></i>
-                                {{ __('Close Window') }}
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Portfolio Modal 2-->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-            </button>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row justify-content-center">
-
-                        <!-- Portfolio Modal - Title-->
-                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 text-center" id="portfolioModal2Label">{{ __('Last Payment') }}</h2>
-                        <!-- Icon Divider-->
-                        <div class="divider-custom text-center">
-                            <div class="divider-custom-line"></div>
-                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                            <div class="divider-custom-line"></div>
-                        </div>
-                        <!-- Portfolio Modal - Image-->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4 col-md-4">
-                                    <address>
-                                        <strong>{{ __('Elf Cafe') }}</strong>
-                                        <br>
-                                        {{ __('2135 Sunset Blvd') }}
-                                        <br>
-                                        {{ __('Los Angeles, CA 90026') }}
-                                        <br>
-                                        <abbr title="Phone">{{ __('P:') }}</abbr>{{ __('(213) 484-6829') }}
-                                    </address>
-                                </div>
-                                <div class="col-xs-8 col-sm-8 col-md-8 text-right">
-                                    <p>
-                                        <em>{{ __('Date: 1st November, 2013') }}</em>
-                                    </p>
-                                    <p>
-                                        <em>{{ __('Receipt #: 34522677W') }}</em>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="text-center">
-                                <h1>{{ __('Receipt') }}</h1>
-                            </div>
-                            </span>
-                            <div class="row">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>{{ __('Product') }}</th>
-                                            <th>{{ __('#') }}</th>
-                                            <th class="text-center">{{ __('Price') }}</th>
-                                            <th class="text-center">{{ __('Total') }}</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="col-md-9"><em>{{ __('Baked Rodopa Sheep Feta') }}</em></h4>
-                                            </td>
-                                            <td class="col-md-1" style="text-align: center"> {{ __('2') }} </td>
-                                            <td class="col-md-1 text-center">{{ __('$13') }}</td>
-                                            <td class="col-md-1 text-center">{{ __('$26') }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="col-md-9"><em>{{ __('Lebanese Cabbage Salad') }}</em></h4>
-                                            </td>
-                                            <td class="col-md-1" style="text-align: center"> {{ __('1') }} </td>
-                                            <td class="col-md-1 text-center">{{ __('$8') }}</td>
-                                            <td class="col-md-1 text-center">{{ __('$8') }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="col-md-9"><em>{{ __('Baked Tart with Thyme and Garlic') }}</em></h4>
-                                            </td>
-                                            <td class="col-md-1" style="text-align: center">{{ __('3') }}</td>
-                                            <td class="col-md-1 text-center">{{ __('$16') }}</td>
-                                            <td class="col-md-1 text-center">{{ __('$48') }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>   </td>
-                                            <td>   </td>
-                                            <td class="text-right">
-                                                <p>
-                                                    <strong>{{ __('Subtotal:') }} </strong>
-                                                </p>
-                                                <p>
-                                                    <strong>{{ __('Tax:') }} </strong>
-                                                </p>
-                                            </td>
-                                            <td class="text-center">
-                                                <p>
-                                                    <strong>{{ __('$6.94') }}</strong>
-                                                </p>
-                                                <p>
-                                                    <strong>{{ __('$6.94') }}</strong>
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>   </td>
-                                            <td>   </td>
-                                            <td class="text-right">
-                                                <h4><strong>{{ __('Total:') }} </strong></h4>
-                                            </td>
-                                            <td class="text-center text-danger">
-                                                <h4><strong>{{ __('$31.53') }}</strong></h4>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- Portfolio Modal - Text-->
-                        </div>
-                        <button class="btn btn-primary text-center" data-dismiss="modal">
-                            <i class="fas fa-times fa-fw"></i>
-                            {{ __('Close Window') }}
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Portfolio Modal 3-->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-            </button>
-            <div class="modal-body text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Accounts and transactions report</h2>
-                            <!-- Icon Divider-->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Image-->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-10">
-                                        <div class="panel panel-primary">
-                                            <!-- Default panel contents -->
-                                            <div class="panel-body">
-                                                <h3>
-                                                    {{ __('Name') }}
-                                                </h3>
-                                            </div>
-                                            <ul class="list-group">
-
-                                                <li class="list-group-item">
-                                                    <h4>{{ __('Account # 1364672 (current debit:: $356.61)') }}</h4>
-                                                    <table class="table table-hover">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>{{ __('Operation date') }}</th>
-                                                                <th>{{ __('Remitter') }}</th>
-                                                                <th>{{ __('Beneficiary') }}</th>
-                                                                <th>{{ __('Amount') }}</th>
-                                                                <th>{{ __('Description') }}</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>{{ __('Wed Nov 12 17:43:13 MSK 2014') }}</td>
-                                                                <td>{{ __('Smith J. (cash in)') }}</td>
-                                                                <td>{{ __('Jonex A.') }}</td>
-                                                                <td>{{ __('356.61') }}</td>
-                                                                <td>{{ __('Iniital deposit') }}</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>{{ __('Wed Nov 13 12:41:13 MSK 2014') }}</td>
-                                                                <td>{{ __('Suzarland TJ.') }}</td>
-                                                                <td>{{ __('Smith J.') }}</td>
-                                                                <td>{{ __('2000.00') }}</td>
-                                                                <td>{{ __('Reward') }}</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>{{ __('Wed Nov 15 07:43:13 MSK 2014') }}</td>
-                                                                <td>{{ __('Smith J.') }}</td>
-                                                                <td>{{ __('Smith M.') }}</td>
-                                                                <td>{{ __('100.00') }}</td>
-                                                                <td>{{ __('funds transfer') }}</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>{{ __('Wed Nov 12 17:43:13 MSK 2014') }}</td>
-                                                                <td>{{ __('Smith J. (cash in)') }}</td>
-                                                                <td>{{ __('Jonex A.') }}</td>
-                                                                <td>{{ __('356.61') }}</td>
-                                                                <td>{{ __('Iniital deposit') }}</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>{{ __('Wed Nov 13 12:41:13 MSK 2014') }}</td>
-                                                                <td>{{ __('NaSuzarland TJ.me') }}</td>
-                                                                <td>{{ __('Smith J.') }}</td>
-                                                                <td>{{ __('2000.00') }}</td>
-                                                                <td>{{ __('Reward') }}</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>{{ __('Wed Nov 15 07:43:13 MSK 2014') }}</td>
-                                                                <td>{{ __('Smith J.') }}</td>
-                                                                <td>{{ __('Smith M.') }}</td>
-                                                                <td>{{ __('100.00') }}</td>
-                                                                <td>{{ __('funds transfer') }}</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>{{ __('Wed Nov 12 17:43:13 MSK 2014') }}</td>
-                                                                <td>{{ __('Smith J. (cash in)') }}</td>
-                                                                <td>{{ __('Jonex A.') }}</td>
-                                                                <td>{{ __('356.61') }}</td>
-                                                                <td>{{ __('Iniital deposit') }}</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <button style="margin-top:20px;" class="btn btn-primary" data-dismiss="modal">
-                                    <i class="fas fa-times fa-fw"></i>
-                                    {{ __('Close Window') }}
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
 
 @endsection
