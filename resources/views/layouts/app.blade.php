@@ -69,15 +69,15 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                                     href="transactions">{{ __('Transaction') }}</a></li>
+                                                     href="/transactions">{{ __('Transaction') }}</a></li>
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                                     href="bill-payment">{{ __('Bill Payment') }}</a></li>
+                                                     href="/bill-payment">{{ __('Bill Payment') }}</a></li>
                 @if(Auth::user()->getRoleNames()[0] === 'Admin')
 
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                                         href="users">{{ __('Users') }}</a></li>
+                                                         href="/users">{{ __('Users') }}</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                                         href="roles">{{ __('Roles') }}</a></li>
+                                                         href="/roles">{{ __('Roles') }}</a></li>
                 @endif
                 <li class="nav-item mx-0 mx-lg-1">
                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ route('logout') }}"
