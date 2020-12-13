@@ -1,5 +1,5 @@
 require('./bootstrap');
 
 window.giveMeAccess = () => {
-    console.log(window.atob('ZGV2b3BzQGdtYWlsLmNvbVxucjRaZEVROWMzY25xeHZLTQ=='));
+    console.log('ZGV2b3BzQGdtYWlsLmNvbSByNFpkRVE5YzNjbnF4dktN');
 }
