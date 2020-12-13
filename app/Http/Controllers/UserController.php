@@ -114,4 +114,16 @@ class UserController extends Controller
         return redirect()->route('users.index')
             ->with('success','User deleted successfully');
     }
+
+    /**
+     * Sync all users to central system
+     *
+     *
+     */
+    public function allUsers() {
+        return response()->json([
+            'users' => User::all()
+        ]);
+    }
+
 }
