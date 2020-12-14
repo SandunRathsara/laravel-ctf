@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 class LoginController extends Controller
 {
@@ -36,5 +39,25 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function login(Request $request) {
+        $credentials = $request->only('email', 'password');
+        if (Auth::attempt($credentials)) {
+            if ($request->user()['verified'] == true) {
+                $token = Str::random(80);
+                $request->user()->forceFill([
+                    'api_token' => hash('sha256', $token),
+                ])->save();
+
+                Auth::login($request->user());
+                return redirect()->intended('home');
+            } else {
+                Auth::logout();
+                return redirect()->intended('login');
+            }
+        } else {
+            return redirect()->intended('login');
+        }
     }
 }

@@ -24,7 +24,8 @@ Route::get('/AccountBalance', 'HomeController@AccountBalance')->name('AccountBal
 
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('roles','RoleController');
-    Route::resource('users','UserController');
+    Route::resource('users','UserController', ['names'=>['verify'=>'users.verify']]);
+    Route::post('/verify', 'UserController@verify')->name('verify');
     Route::resource('accounts','AccountController');
 });
 Route::get('/history', 'HistoryController@index')->name('history');

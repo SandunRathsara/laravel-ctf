@@ -16,7 +16,9 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.4",
         "laravelcollective/html": "^6.2",
-        "spatie/laravel-permission": "^3.17"
+        "spatie/laravel-permission": "^3.17",
+      "ext-json": "*",
+        "ext-http": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

@@ -50,6 +50,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/users.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bill-payment.css') }}" rel="stylesheet">
     <link href="{{ asset('css/transactions.css') }}" rel="stylesheet">
 </head>
