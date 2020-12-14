@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', 'UserController@allUsers' );
+Route::get('/user', 'UserController@allUsers' );
