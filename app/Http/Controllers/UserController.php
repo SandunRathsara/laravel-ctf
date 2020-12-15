@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
@@ -97,6 +99,7 @@ class UserController extends Controller
             'roles' => 'required'
         ]);
         $input = $request->all();
+        $input['verified'] = 1;
         if (!empty($input['password'])) {
             $input['password'] = Hash::make($input['password']);
         } else {

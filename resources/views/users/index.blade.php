@@ -21,6 +21,7 @@
             <th>Name</th>
             <th>Email</th>
             <th>Roles</th>
+            <th>Verified</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($data as $key => $user)
@@ -35,6 +36,7 @@
                         @endforeach
                     @endif
                 </td>
+                <td>{{ $user->verified }}</td>
                 <td>
                     <a class="btn btn-info" href="{{ route('users.show',$user->id) }}">Show</a>
                     <a class="btn btn-primary" href="{{ route('users.edit',$user->id) }}">Edit</a>
@@ -46,5 +48,4 @@
         @endforeach
     </table>
     {!! $data->render() !!}
-    <p class="text-center text-primary"><small>Tutorial by rscoder.com</small></p>
 @endsection
